@@ -18,3 +18,6 @@
 <h2>Citations</h2>
 <p>The code in this repository originally written by <strong>@sleepingcat4</strong> and copyrighted under MIT Licence for distribution.
 And it was written following updated Tensorflow documentation.</p>
+
+1. https://www.tensorflow.org/hub/tutorials/yamnet
+2. https://www.tensorflow.org/hub/tf2_saved_model
