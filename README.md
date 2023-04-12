@@ -16,5 +16,5 @@
 <h2>Why we don&rsquo;t have a dataset?</h2>
 <p>We don&rsquo;t have a dataset for our project yet so we didn&rsquo;t add any dataset by default in our repository but you can audio datasets of your choice, few examples are UrbanAudio8K, Audioset and more and then perform interferences using our notebook.</p>
 <h2>Citations</h2>
-<p>The code in this repository originally written by @sleepingcat4 and copyrighted under MIT Licence for distribution.
+<p>The code in this repository originally written by <strong>@sleepingcat4</strong> and copyrighted under MIT Licence for distribution.
 And it was written following updated Tensorflow documentation.</p>
