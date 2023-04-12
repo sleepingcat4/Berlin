@@ -1,0 +1,1 @@
+model = hub.load('https://tfhub.dev/google/yamnet/1')
