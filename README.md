@@ -1,38 +1,20 @@
-In high energy physics, Scientists use various methods to detect and recognise a particle. Some methods include:
-
-1. Cherenkov radiation
-2. Calorimeter
-3. Scintillation Counters
-4. Time of-flight
-
-Though these methods are highly accurate but by the natural instinct of particles, certain particles can go missing and unnoticed. Like it took us a long time to find Neutrino, the same goes for more ghost particles that we don’t know about yet. 
-
-Stealing a glance from traditional thinking, if we put a glance towards modern thinking, Harvard’s research tells us “Acoustic methods can be used to detect Neutrinos”. High energy particles by nature do not produce sound waves as they move through vacuum within the particle accelerator and by its own it only creates electro-magnetic signatures and other markers. 
-
-But, when particles are smashed/collided against a target(solid object) we can hear a faint sound though those sound waves can’t be heard by humans, sensitive equipment can pick them up and store them as audio readings. Afterwards, there’s a concept, where piezoelectric materials are used by particle accelerators and convert particle collision energy to electric signal and further amplified to create audible sound. All these opens-up the possibility of Artificial Intelligence being infused with particle recognition and detection.
-
-<h3>What Claire is?</h3>
-Calire is a project where Artificial Intelligence is used to detect exotic and unseen particles by their generated audio. (while they collide with a target)
-
-<h3>How Claire works?</h3>
-At its heart, first, audio sound is collected from particle collision then denoising Algorithm removes any unwanted/Gaussian noise/white noise. After that, the audio file is converted into an audio spectrogram and logarithmic transformation is applied. This transformed audio spectrogram is then stored into a file.
-
-A convolutional network, classifies the audio spectrogram into relevant classes. The Conv network is previously trained on labelled audio spectrogram photos dataset. Through fine-tuning the model always stays relevant and overcomes uncertainty.
-
-<h3>What are the challenges with Claire?</h3> 
-Currently, there’s no adequate dataset to train Berlin on except for a few examples created by me. And these and other challenges are:
-
-<ol>
-<li)Absence of adequate dataset</li>
-<li>Classifying unknown particles  with Conv network</li>
-<li>A custom denoising Algorithm to remove noise from particle’s audio files</li>
-<li>A depth physics study and research on how temperature, cross-sectional area, target structure and other factors can change sound waves.</li>
-</ol>
-
-<h3>Future plan</h3>
-I am planning to resolve the challenges within Claire. That might take a few months as I have to collaborate with a few individuals to resolve it.
-
-<h3>Author’s note</h3>
-Recently, I became sick with Typhoid fever. And it had some noticeable and semi-permanent neurological effects on my motor skills and memory. I have recovered mostly with some tremors in my hands and sleepiness, which doctors said will take a few months to a year to fully recover. 
-
-That’s why, I started a 24 hours challenge concept, where I take a favourite subject of my choice and think of an idea and infuse Artificial Intelligence to create something meaningful and Claire is one of the first few projects to be made. Hahaha, more to come!
+<h1>Introduction</h1>
+<p>This repository contains all the necessary Artificial Intelligence Model code and examples to work with them for Beamline for Schools Competition 2023 submission of team Sound waves, representing Pakistan.</p>
+<h2>Overview &amp; Caution</h2>
+<p>In our paper, we mentioned using YAMNet from Google, that&rsquo;s why, we have loaded the pretrained YAMNet model from Tensorflow Hub and by default allowed the parameters/weights to be trained but we advise to change it to False to achieve better results.</p>
+<p>If you encounter any issues kindly raise an issue on this repository and it&rsquo;ll be fixed in 24 hours.</p>
+<h2>How to load the model?</h2>
+<p>Go to the <strong>import</strong> folder and import all the required libraries and then go to the <strong>model</strong> folder and import the learn_model.py file into your working file and you&rsquo;ll have the YAMNet model.</p>
+<h2>How to train the model?</h2>
+<p>You can either use our train.py file to start training your model on your dataset or write your own training loop.</p>
+<h2>Denoising the audio</h2>
+<p>You can visit the <strong>denoise</strong> folder and see the denoise spec.py file which can be used for denoising your audio.</p>
+<h2>Creating audio spectrogram</h2>
+<p>Visit the <strong>audio_spectrogram</strong> folder and use the gram.py file to create your spectrogram.</p>
+<h2>What&rsquo;s the notebook folder</h2>
+<p>Notebook folder contains easy to use examples of our concept by anyone using an interactive python notebook aka Jupyter Notebook. You can either run on your computer if you have GPUs otherwise kindly use <a href="https://colab.research.google.com/"Google Colab</a>.</p>
+<h2>Why we don&rsquo;t have a dataset?</h2>
+<p>We don&rsquo;t have a dataset for our project yet so we didn&rsquo;t add any dataset by default in our repository but you can audio datasets of your choice, few examples are UrbanAudio8K, Audioset and more and then perform interferences using our notebook.</p>
+<h2>Citations</h2>
+<p>The code in this repository originally written by @sleepingcat4 and copyrighted under MIT Licence for distribution.
+And it was written following updated Tensorflow documentation.</p>
