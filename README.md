@@ -7,11 +7,17 @@ The notebook folder contains Jupyter notebooks for training and transfer learnin
 ## Dataset
 As creating the dataset is a fundamental aspect of the proposal paper at CERN, we do not provide any pre-attached dataset.
 
-Trained Models
+## Trained Models
 As we do not have an in-built dataset yet for particle collision sound waves, we have not trained any models and cannot provide any pre-trained models at the moment.
 
-Classical vs Hybrid vs Quantum Models
+## Classical vs Hybrid vs Quantum Models
 Each model has its own advantages and disadvantages. In most cases, classical models perform better, but quantum-based hybrid models and quantum models tend to show better performance in fewer epochs.
+
+### Auto Differentiation (Gradient Tape)
+Training loops ie. automatic differentiation is part of training a model. Since we do not have a dataset yet, we were not able to write the gradient tape. But, if you're interested in how it can be written refer to this tutorial  **[https://www.tensorflow.org/guide/keras/writing_a_training_loop_from_scratch]**
+
+## Audio denoising
+In order to perform removal of background noise from the dataset, refer to **denoise** folder and use the **spec.py** file. 
 
 ## Conclusion
 Our proposal paper at CERN deals with particle collision sound waves and audio spectrograms. These produce faint sounds, and using quantum models to capture these nuances to perform precise experiments and produce concrete results is a natural step forward.
